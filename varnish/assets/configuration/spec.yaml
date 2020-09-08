@@ -44,7 +44,6 @@ files:
             value:
               type: string
               example: <INSTANCE_NAME>
-          - template: instances/default
           - name: varnishadm
             required: false
             description: |
@@ -80,6 +79,7 @@ files:
               type: integer
               default: 6082
               example: 6082
+          - template: instances/default
       - template: logs
         example:
           - type: file
